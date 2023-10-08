@@ -1,15 +1,70 @@
-body {
-    margin: 0;
-    padding: 0;
+html {
+    background-color: rgb(228, 228, 228);
+    font-family: 'Courier New', Courier, monospace;
 }
-  
-#nav-bar {
+header {
     position: fixed;
     top: 0;
+    height: 40px;
+    width: 100%;
 }
-  
-@media (width: 800px) {
-    form {
-        display: flex;
+header, .nav-link, h3 {
+    background-color: rgb(189, 0, 0);
+    color: white;
+    text-decoration: none;
+}
+h3 {
+    height: auto;
+    width: 91%;
+    margin-left: 60px;
+}
+#header-img {
+    width: 40px;
+    height: 40px;
+}
+#nav-bar {
+    position: fixed;
+    display: flex;
+    top: 0;
+    line-height: 40px;
+}
+a:hover {
+    background-color: white;
+    color: black;
+}
+.nav-link:nth-of-type(1) {
+    margin-left: 200px;
+}
+.nav-link:nth-of-type(2) {
+    margin-left: 280px;
+}
+.nav-link:nth-of-type(3) {
+    margin-left: 300px;
+}
+section:nth-of-type(1) {
+    margin-top: 80px;
+}
+section {
+    text-align: center;
+    margin: 60px 0;
+}
+form {
+    text-align: center;
+    width: 91%;
+    height: 100px;
+    position: relative;
+    left: 57px;
+    background-color: white;
+}
+label, #submit {
+    position: relative;
+    top: 38px;
+}
+footer {
+    text-align: center;
+}
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
     }
 }
